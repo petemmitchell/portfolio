@@ -57,7 +57,7 @@ This block of text should explain how to configure your application:
 
 Screenshots of welcome page:
 
-![Screenshot 1](http://www.dropbox.com/s/p36qmn6zgzi9lco/Screen%20Shot%202014-09-16%20at%209.29.26%20PM.png)
+[Screenshot 1](http://www.dropbox.com/s/p36qmn6zgzi9lco/Screen%20Shot%202014-09-16%20at%209.29.26%20PM.png)
 
 <!-- ![Screenshot 2](http://placekitten.com/400/300) -->
 
