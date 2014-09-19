@@ -10,7 +10,7 @@ By [Pete Mitchell](https://github.com/petemmitchell).
 <!-- [![Code Climate](Code Climate Badge IMG URL goes here)](Code Climate URL goes here) -->
 
 ## Description
-**Rails Portfolio** is a simple Rails server, meant to advertise the services of Pete Mitchell.
+**Rails Portfolio** is a simple Rails server, meant to advertise the services of Pete Mitchell. It is an ongoing work in progress.
 
 <!-- ## Installation
 
@@ -57,7 +57,7 @@ This block of text should explain how to configure your application:
 
 Screenshots of welcome page:
 
-[Screenshot 1](http://www.dropbox.com/s/p36qmn6zgzi9lco/Screen%20Shot%202014-09-16%20at%209.29.26%20PM.png)
+![Screenshot 1](http://dl.dropbox.com/s/8w1cebkzmttamrc/Screen%20Shot%202014-09-18%20at%208.15.40%20PM.png?dl=0)
 
 <!-- ![Screenshot 2](http://placekitten.com/400/300) -->
 
@@ -72,6 +72,7 @@ send us a pull request.
 ## Authors
 
 * Pete Mitchell (https://github.com/petemmitchell)
+* No current collaborators, will update as necessary.
 
 
 ## Contributing

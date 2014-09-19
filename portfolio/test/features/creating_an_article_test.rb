@@ -6,11 +6,11 @@ feature 'Creating An Article' do
     visit(new_article_path)
 
     #When I fill in the attributes
-    fill_in('Title', :with => 'Becoming a Code Fellow')
-    fill_in('Body', :with => 'Means striving for excellence.')
+    fill_in('Title', with: articles(:cr).title)
+    fill_in('Body', with: articles(:cr).body)
     click_button('Create Article')
 
     #Then I am shown my new article to post
-    page.text.must_include 'Code Fellow'
+    page.text.must_include articles(:cr).title
   end
 end
