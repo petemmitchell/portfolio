@@ -7,7 +7,7 @@ feature 'Deleting An Article Test' do
     visit(articles_path)
 
     #When click on the delete post option
-    find_link('Destroy').click
+    page.find('tbody tr:last').click_on 'Destroy'
 
     #Then I should be shown a confirmation of the deletion
     visit articles_path
