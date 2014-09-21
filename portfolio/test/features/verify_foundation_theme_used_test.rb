@@ -7,6 +7,6 @@ feature "VerifyFoundationThemeUsed" do
     #When I visit the root path
     visit root_path
     #Then the header stylesheet should point to my theme
-
+    page.must_have_css
   end
 end

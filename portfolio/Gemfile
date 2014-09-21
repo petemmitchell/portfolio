@@ -8,16 +8,24 @@ gem 'minitest-rails'
 gem 'rails', '4.1.6'
 gem 'sass-rails', '~> 4.0.3'
 gem 'spring', group: :development
-gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
-gem'sdoc', '~> 0.4.0', group: :doc
 gem 'selenium-webdriver'
 gem 'foundation-rails', '5.4.0'
 gem "font-awesome-rails"
 
 group :development do
   gem 'rails_layout'
+  gem "sqlite3"
+end
+
+group :doc do
+    gem "sdoc", require: false
+end
+
+group :production do
+  gem "rails_12factor"
+  gem "pg"
 end
 
 group :test do
