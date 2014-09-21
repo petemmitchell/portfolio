@@ -12,6 +12,8 @@ gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem'sdoc', '~> 0.4.0', group: :doc
+gem 'selenium-webdriver'
+gem 'foundation-rails'
 
 group :test do
   gem 'minitest-rails-capybara'
