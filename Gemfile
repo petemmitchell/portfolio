@@ -17,6 +17,7 @@ gem "font-awesome-rails"
 group :development do
   gem 'rails_layout'
   gem "sqlite3"
+  gem "guard"
 end
 
 group :doc do
