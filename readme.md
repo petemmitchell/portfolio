@@ -1,9 +1,7 @@
 # Rails Portfolio
-<!-- If you'd like to use a logo instead uncomment this code and remove the text above this line
 
-  ![Logo](URL to logo img file goes here)
+  ![Travis Status](https://travis-ci.org/petemmitchell/portfolio.svg?branch=master)
 
--->
 
 By [Pete Mitchell](https://github.com/petemmitchell).
 
