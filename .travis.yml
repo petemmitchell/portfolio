@@ -1,10 +1,17 @@
 language: ruby
 rvm:
-  - 2.1.2
+- 2.1.2
 env:
-  - DB=postgresql
-  - DB=mysql
+- DB=postgresql
+- DB=mysql
 script:
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare
-  - bundle exec rake
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rake
+deploy:
+  provider: heroku
+  api_key:
+    secure: VF+FI9KuW3CXK5cROsE8inCjLBJf7qfAn24Kw02nHD0MN3yBJSdIx7E4jmZJwnbmdsf4oJ0WAJrIV5/To9C1lCh1PbygHFdr4cSVe0hxo80gemocfBk+jOmaQVueWLZ1VZwb9bIRVgPUv2vj85WfpXHqTqImbHVh8132DdBtViE=
+  app: pete-portfolio
+  on:
+    repo: petemmitchell/portfolio
