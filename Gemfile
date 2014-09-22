@@ -18,6 +18,11 @@ group :development do
   gem 'rails_layout'
   gem "sqlite3"
   gem "guard"
+  gem 'guard-livereload', require: false
+  gem 'guard-bundler', require: false
+  gem 'guard-rails'
+  gem 'guard-minitest'
+  gem 'guard-rubocop'
 end
 
 group :doc do
