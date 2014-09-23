@@ -13,8 +13,7 @@ feature 'Creating a project' do
 
     # Then a new project is created
     page.text.must_include 'Project has been created'
-    assert page.has_css?('#notice'), 'Expected a flash notice on this page, none
-     found.'
+    assert page.has_css? '.success'
     page.status_code.must_equal 200
   end
 end
