@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 gem 'coffee-rails', '~> 4.0.0'
 gem 'eefgilm'
@@ -12,28 +12,28 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'selenium-webdriver'
 gem 'foundation-rails', '5.4.0'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 
 group :development do
   gem 'rails_layout'
-  gem "sqlite3"
-  gem "guard"
+  gem 'sqlite3'
+  gem 'guard'
   gem 'guard-livereload', require: false
   gem 'guard-bundler', require: false
   gem 'guard-rails'
   gem 'guard-minitest'
-  gem 'guard-rubocop'
 end
 
 group :doc do
-    gem "sdoc", require: false
+  gem 'sdoc', require: false
 end
 
 group :production do
-  gem "rails_12factor"
-  gem "pg"
+  gem 'rails_12factor'
+  gem 'pg'
 end
 
 group :test do
   gem 'minitest-rails-capybara'
+  gem 'launchy'
 end
