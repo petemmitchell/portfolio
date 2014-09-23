@@ -4,7 +4,7 @@ feature 'Deleting An Article Test' do
   scenario 'an existing blog to be deleted' do
     # Given that I have a blog post I want to delete
     Article.create(title: 'I hate errors',
-        body: 'Means striving for excellence.')
+                   body: 'Means striving for excellence.')
     visit(articles_path)
 
     # When click on the delete post option
