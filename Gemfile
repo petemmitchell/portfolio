@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'selenium-webdriver'
 gem 'foundation-rails', '5.4.0'
 gem 'font-awesome-rails'
+gem 'faker'
 
 group :development do
   gem 'rails_layout'
@@ -22,6 +23,7 @@ group :development do
   gem 'guard-bundler', require: false
   gem 'guard-rails'
   gem 'guard-minitest'
+  gem 'guard-rubocop'
 end
 
 group :doc do
