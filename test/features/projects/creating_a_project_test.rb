@@ -31,8 +31,6 @@ feature 'Creating project' do
 
     # Then the form should be displayed again, with an error message.
     current_path.must_match /projects$/
-    assert.has_css?('div#field_with_errors')
-    page.text.must_include 'Name is too short'
-    page.text.must_include "Technologies used can't be blank"
+    page.must_have_css('div.field_with_errors')
   end
 end
