@@ -23,14 +23,16 @@ feature 'Creating project' do
     # Given invalid project data in a form
     visit new_project_path
 
-
     # When the form is submitted with a short name and missing technologies_used
     # field
     fill_in 'Name', with: 'Q'
     click_on 'Create Project'
 
     # Then the form should be displayed again, with an error message.
-    current_path.must_match /projects$/
+    current_path.must_match(/projects$/)
+    page.text.must_include 'Project could not be saved'
+    page.text.must_include 'Name is too short'
+    page.text.must_include "Technologies used can't be blank"
     page.must_have_css('div.field_with_errors')
   end
 end
