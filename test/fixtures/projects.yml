@@ -1,0 +1,7 @@
+portfolio:
+  name: How meta
+  technologies_used: HTML5
+
+freelance:
+  name: Barnyard Cereal
+  technologies_used: Ruby, Rails, Farmville API, Automilker
