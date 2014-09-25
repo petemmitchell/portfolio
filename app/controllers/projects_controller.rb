@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+  before_action :set_project, only: [:show, :edit, :update, :destroy]
+
   def index
     @projects = Project.all
   end
@@ -19,21 +21,22 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    set_project
   end
 
   def edit
-    set_project
   end
 
   def update
-    set_project
-
     if @project.update_attributes(project_params)
       redirect_to @project, notice: 'Project was successfully updated.'
     else
       render :edit
     end
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to projects_path, notice: 'Article was successfully destroyed.'
   end
 
   private
