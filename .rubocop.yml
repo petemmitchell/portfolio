@@ -9,3 +9,12 @@ AllCops:
   Exclude:
     - db/schema.rb
     - vendor/**/*
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/HandleExceptions:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
