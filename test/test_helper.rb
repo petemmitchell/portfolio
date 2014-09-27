@@ -29,4 +29,10 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def sign_in
+    visit new_user_session_path
+    fill_in 'Email', with: users(:dempsey).email
+    fill_in 'Password', with: 'onlygodcanjudgeme'
+    click_on 'Log in'
+  end
 end

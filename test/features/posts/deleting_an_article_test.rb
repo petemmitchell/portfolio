@@ -3,6 +3,7 @@ require 'test_helper'
 feature 'Deleting An Article Test' do
   scenario 'an existing blog to be deleted' do
     # Given that I have a blog post I want to delete
+    sign_in
     Article.create(title: 'I hate errors',
                    body: 'Means striving for excellence.')
     visit(articles_path)
