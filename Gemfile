@@ -15,6 +15,7 @@ gem 'foundation-rails', '5.4.0'
 gem 'font-awesome-rails'
 gem 'faker'
 gem 'devise'
+gem 'coveralls', require: false
 
 group :development do
   gem 'rails_layout'
