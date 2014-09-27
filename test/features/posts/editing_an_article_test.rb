@@ -3,6 +3,7 @@ require 'test_helper'
 feature 'Editing An Article' do
   scenario 'en existing post that needs to be edited' do
     # Given that I own a blog post I want to edit
+    sign_in
     Article.create(title: articles(:cr).title, body: articles(:cr).body)
     visit article_path(articles(:cr))
 
