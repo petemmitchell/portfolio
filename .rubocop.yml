@@ -9,6 +9,8 @@ AllCops:
   Exclude:
     - db/schema.rb
     - vendor/**/*
+    - config/initializers/devise.rb
+    - db/migrate/*
 
 Lint/AssignmentInCondition:
   Enabled: false

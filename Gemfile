@@ -14,6 +14,7 @@ gem 'selenium-webdriver'
 gem 'foundation-rails', '5.4.0'
 gem 'font-awesome-rails'
 gem 'faker'
+gem 'devise'
 
 group :development do
   gem 'rails_layout'
