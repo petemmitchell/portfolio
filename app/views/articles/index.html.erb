@@ -24,4 +24,7 @@
 
 <br>
 
+<% if current_user.present? &&
+  (current_user.role == "editor" || current_user.role == "author") %>
 <%= link_to 'New Article', new_article_path %>
+<% end %>
