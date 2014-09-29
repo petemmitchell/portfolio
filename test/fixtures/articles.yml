@@ -1,9 +1,11 @@
 cr:
   title: Becoming a Code Fellow
   body: Means striving for excellence.
-  author: oba
+  author: author
+  published: true
 
 cr2:
   title: Becoming a Web Developer
   body: Means striving for excellence.
-  author: dempsey
+  author: editor
+  published: true

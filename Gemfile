@@ -16,6 +16,7 @@ gem 'font-awesome-rails'
 gem 'faker'
 gem 'devise'
 gem 'coveralls', require: false
+gem 'pundit'
 
 group :development do
   gem 'rails_layout'
