@@ -3,6 +3,9 @@ ENV['RAILS_ENV'] = 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/rails'
+require 'coveralls'
+require 'pry'
+Coveralls.wear!
 
 # To add Capybara feature tests add `gem "minitest-rails-capybara"`
 # to the test group in the Gemfile and uncomment the following:
@@ -29,10 +32,10 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
-  def sign_in
+  def sign_in(role = :editor)
     visit new_user_session_path
-    fill_in 'Email', with: users(:dempsey).email
-    fill_in 'Password', with: 'onlygodcanjudgeme'
+    fill_in 'Email', with: users(role).email
+    fill_in 'Password', with: 'password'
     click_on 'Log in'
   end
 end

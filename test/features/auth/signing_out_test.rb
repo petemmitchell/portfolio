@@ -6,8 +6,8 @@ like being a dictator" do
     # Given a user is signed in
     visit '/'
     click_on 'Log In'
-    fill_in 'Email', with: users(:oba).email
-    fill_in 'Password', with: 'backflips'
+    fill_in 'Email', with: users(:author).email
+    fill_in 'Password', with: 'password'
     click_on 'Log in'
 
     # When they click on "Sign Out"

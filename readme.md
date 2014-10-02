@@ -2,6 +2,8 @@
 
   ![Travis Status](https://travis-ci.org/petemmitchell/portfolio.svg?branch=master)
 
+  [![Coverage Status](https://coveralls.io/repos/petemmitchell/portfolio/badge.png?branch=chapter6)](https://coveralls.io/r/petemmitchell/portfolio?branch=chapter6)
+
 
 By [Pete Mitchell](https://github.com/petemmitchell).
 
