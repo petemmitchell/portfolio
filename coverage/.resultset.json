@@ -4,6 +4,11 @@
       "/Users/BMO/Projects/portfolio/portfolio/app/models/article.rb": [
         1,
         1,
+        null,
+        1,
+        0,
+        0,
+        null,
         null
       ],
       "/Users/BMO/Projects/portfolio/portfolio/app/models/project.rb": [
@@ -150,7 +155,6 @@
         1,
         0,
         0,
-        0,
         null,
         0,
         0,
@@ -169,32 +173,6 @@
         null,
         null,
         0,
-        0,
-        null,
-        null
-      ],
-      "/Users/BMO/Projects/portfolio/portfolio/test/features/posts/editors_are_allowed_to_publish_test.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
         0,
         null,
         null
@@ -207,27 +185,6 @@
         null,
         0,
         null,
-        null,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null
-      ],
-      "/Users/BMO/Projects/portfolio/portfolio/test/features/posts/visitors_not_allowed_to_post_test.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        0,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
         null,
         0,
         null,
@@ -383,7 +340,6 @@
         1,
         null,
         1,
-        null,
         1,
         null,
         null,
@@ -401,6 +357,6 @@
         null
       ]
     },
-    "timestamp": 1411958000
+    "timestamp": 1412269481
   }
 }

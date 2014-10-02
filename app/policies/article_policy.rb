@@ -16,7 +16,7 @@ class ArticlePolicy < ApplicationPolicy
 
   def edit?
     if user
-      @user.editor? || @user.id == record.author_id
+      @user.editor? || @user.id == article.author_id
     else
       false
     end
@@ -24,7 +24,7 @@ class ArticlePolicy < ApplicationPolicy
 
   def update?
     if user
-      @user.editor? || @user.id == record.author_id
+      @user.editor? || @user.id == article.author_id
     else
       false
     end
@@ -32,9 +32,9 @@ class ArticlePolicy < ApplicationPolicy
 
   def show?
     if !user
-      record.published?
+      article.published?
     elsif user.author?
-     user.id == record.author_id
+      user.id == article.author_id
     elsif user.editor?
       true
     end

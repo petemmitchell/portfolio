@@ -11,7 +11,7 @@
 
   <tbody>
     <% @articles.each do |article| %>
-      <tr>
+      <tr id="<%= dom_id(article) %>">
         <td><%= article.title %></td>
         <td><%= article.body %></td>
         <td><%= link_to 'Show', article %></td>

@@ -6,10 +6,10 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   def author?
-      role == 'author'
+    role == 'author'
   end
 
   def editor?
-      role == 'editor'
+    role == 'editor'
   end
 end

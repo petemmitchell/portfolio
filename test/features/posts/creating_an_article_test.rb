@@ -2,14 +2,14 @@ require 'test_helper'
 
 feature 'Creating An Article' do
   # visitors
-  scenario "unauthenticated site visitors cannot visit new_article_path" do
-  visit new_article_path
-  page.must_have_content "You need to sign in or sign up before continuing"
+  scenario 'unauthenticated site visitors cannot visit new_article_path' do
+    visit new_article_path
+    page.must_have_content 'You need to sign in or sign up before continuing'
   end
 
-  scenario "unauthenticated site vistiors cannot see new article button" do
+  scenario 'unauthenticated site vistiors cannot see new article button' do
     visit articles_path
-    page.wont_have_link "New Article"
+    page.wont_have_link 'New Article'
   end
 
   # authors

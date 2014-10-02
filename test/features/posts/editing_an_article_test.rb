@@ -2,24 +2,23 @@ require 'test_helper'
 
 feature 'Editing An Article' do
   # visitors
-  scenario "unauthenticated site visitors cannot visit edit_article_path" do
-  visit edit_article_path(:cr)
-  page.must_have_content "You need to sign in or sign up before continuing"
+  scenario 'unauthenticated site visitors cannot visit edit_article_path' do
+    visit edit_article_path(:cr)
+    page.must_have_content 'You need to sign in or sign up before continuing'
   end
 
-  scenario "unauthenticated site vistiors cannot see edit article button" do
+  scenario 'unauthenticated site vistiors cannot see edit article button' do
     visit articles_path
-    page.wont_have_link "Edit"
+    page.wont_have_link 'Edit'
   end
 
   # authors
   scenario 'authors should only be able to edit their own articles' do
     sign_in(:author)
     visit edit_article_path(articles(:cr))
-    save_and_open_page
 
     visit edit_article_path(articles(:cr2))
-    page.must_have_content "You need to sign in or sign up before continuing"
+    page.must_have_content 'You are not authorized to perform this action.'
   end
 
   scenario 'en existing post that needs to be edited' do
