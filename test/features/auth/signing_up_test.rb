@@ -28,6 +28,7 @@ posts or access to my site' do
     Capybara.current_session.driver.request.env['omniauth.auth'] = OmniAuth.config.mock_auth[:twitter]
 
     save_and_open_page
+    click_on 'Log In'
     click_on 'Sign in with Twitter'
     page.must_have_content 'Logged in as test_twitter_user'
   end
