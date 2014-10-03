@@ -6,7 +6,6 @@ feature 'Adding comments with moderation to my articles' do
     page.text.must_include 'Comments'
   end
 
-
   scenario 'a site visitor wants to add a comment to an article' do
     visit article_path(articles(:cr))
     fill_in 'Author', with: 'Your nemesis'

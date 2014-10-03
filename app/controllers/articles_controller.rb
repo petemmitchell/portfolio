@@ -69,7 +69,7 @@ class ArticlesController < ApplicationController
   # only allow the white list through.
   def article_params
     params.require(:article).permit(:title, :body,
-      (:published if current_user.role == 'editor'))
+    (:published if current_user.role == 'editor'))
   end
 
   def user_not_authorized

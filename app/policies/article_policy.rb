@@ -34,7 +34,7 @@ class ArticlePolicy < ApplicationPolicy
     if !user
       article.published?
     elsif user.author?
-     user.id == article.author_id
+      user.id == article.author_id
     elsif user.editor?
       true
     end
