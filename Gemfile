@@ -17,6 +17,8 @@ gem 'faker'
 gem 'devise'
 gem 'coveralls', require: false
 gem 'pundit'
+gem 'omniauth-twitter'
+gem 'figaro'
 
 group :development do
   gem 'rails_layout'
@@ -27,6 +29,8 @@ group :development do
   gem 'guard-rails'
   gem 'guard-minitest'
   gem 'guard-rubocop'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :doc do

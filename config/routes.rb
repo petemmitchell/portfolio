@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :articles
+  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
+
+  resources :articles do
+    resources :comments
+  end
 
   resources :welcome
 
