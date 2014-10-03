@@ -17,6 +17,8 @@ gem 'faker'
 gem 'devise'
 gem 'coveralls', require: false
 gem 'pundit'
+gem 'omniauth-twitter'
+gem 'figaro'
 
 group :development do
   gem 'rails_layout'

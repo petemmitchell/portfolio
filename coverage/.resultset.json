@@ -43,6 +43,20 @@
         0,
         0,
         null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/BMO/Projects/portfolio/portfolio/test/features/can_access_home_test.rb": [
@@ -64,7 +78,6 @@
         0,
         null,
         null,
-        null,
         1,
         0,
         0,
@@ -79,7 +92,6 @@
         0,
         0,
         null,
-        0,
         0,
         0,
         0,
@@ -373,6 +385,6 @@
         null
       ]
     },
-    "timestamp": 1412310357
+    "timestamp": 1412313346
   }
 }
