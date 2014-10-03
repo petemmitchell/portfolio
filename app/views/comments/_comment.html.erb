@@ -1,0 +1,10 @@
+<h3>Comments</h3>
+<% @article.comments.each do |comment| %>
+  <tr>
+    <td><%= comment.author %></td>
+    <td><%= comment.content %></td>
+    <% if current_user.present? && (current_user.editor? || current_user.author?) %>
+      <td><%= link_to 'Edit', edit_article_comment_path(@article, comment) %></td>
+    <% end %>
+  </tr>
+<% end %>

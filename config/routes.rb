@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+<<<<<<< Updated upstream
   devise_for :users
+=======
+  resources :comments
+
+>>>>>>> Stashed changes
   resources :articles
 
   resources :welcome
