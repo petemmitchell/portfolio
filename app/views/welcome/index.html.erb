@@ -199,17 +199,17 @@
 
         <div class="medium-4 columns">
 
-          <h6>Git</h6>
+          <h6>Git/Github</h6>
           <div class="progress medium-12 round">
-            <span class="meter" style="width: 80%"></span>
+            <span class="meter" style="width: 90%"></span>
           </div><!-- /.progress -->
 
-          <h6>Photoshop</h6>
+          <h6>Javascript</h6>
           <div class="progress medium-12 alert round">
             <span class="meter" style="width: 70%"></span>
           </div><!-- /.progress -->
 
-          <h6>PHP &amp; MySQL</h6>
+          <h6>Angular.js &amp; jQuery</h6>
           <div class="progress medium-12 alert round">
             <span class="meter" style="width: 70%"></span>
           </div><!-- /.progress -->
@@ -290,26 +290,26 @@
       <div class="medium-6 columns">
 
         <form class="contact-form">
+          <%= form_tag(send_mail_path) do %>
+            <div class="input-item">
+              <label>Name <span class="required">*</span></label>
+              <input type="text" placeholder="Full name">
+            </div><!-- /.input-item -->
 
-          <div class="input-item">
-            <label>Name <span class="required">*</span></label>
-            <input type="text" placeholder="Full name">
-          </div><!-- /.input-item -->
+            <div class="input-item">
+              <label>Email <span class="required">*</span></label>
+              <input type="email" placeholder="Email address">
+            </div><!-- /.input-item -->
 
-          <div class="input-item">
-            <label>Email <span class="required">*</span></label>
-            <input type="email" placeholder="Email address">
-          </div><!-- /.input-item -->
+            <div class="input-item">
+              <label>Messages <span class="required">*</span></label>
+              <textarea cols="10" rows="4" placeholder="Your message"></textarea>
+            </div><!-- /.input-item -->
 
-          <div class="input-item">
-            <label>Messages <span class="required">*</span></label>
-            <textarea cols="10" rows="4" placeholder="Your message"></textarea>
-          </div><!-- /.input-item -->
-
-          <div class="input-item text-center">
-            <input class="button small success radius" type="submit" value="Submit">
-          </div><!-- /.input-item -->
-
+            <div class="input-item text-center">
+              <input class="button small success radius" type="submit" value="Submit">
+            </div><!-- /.input-item -->
+          <=2
         </form><!-- /.contact-form -->
 
       </div><!-- /.medium-6 .columns -->
